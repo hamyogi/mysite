@@ -24,7 +24,7 @@ SECRET_KEY = '!axqeylo38x5*$7kxa8x&y1bsi-*qpn6bdy=*ew(vq!8@_-xno'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', '[::1]', '.pythonanywhere.com']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', '[::1]', 'hamyogi.pythonanywhere.com']
 
 # Application definition
 

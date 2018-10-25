@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>detail</title>
+</head>
+<body>
+    {{ item.question_text }} <br>
+    {{ item.pub_date }}
+    {{ item.choice_set.all }}
+
+    <form action="vote/" method="post">
+
+    {%for c in item.choice_set.all %}
+        <input type="radio" name="choice" value="{{ c.id }}">
+        {{ c.choice_text }}
+    {% endfor %}
+        {% csrf_token %}
+        <input type="submit" value="투표">
+    </form>
+</body>
+</html>

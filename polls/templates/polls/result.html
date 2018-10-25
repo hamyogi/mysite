@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Results</title>
+</head>
+<body>
+질문 : {{ q.question_text }} <br><br><br><br>
+
+
+{% for choice in q.choice_set.all %}
+    {{ choice.choice_text }} --> {{choice.votes}} <br>
+{% endfor %}
+
+</body>
+</html>
